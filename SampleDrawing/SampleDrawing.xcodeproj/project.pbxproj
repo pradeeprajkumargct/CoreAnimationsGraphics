@@ -19,6 +19,9 @@
 		28BFB4D216AFF126000967A7 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BFB4D016AFF126000967A7 /* MainStoryboard.storyboard */; };
 		28BFB4D516AFF126000967A7 /* SDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BFB4D416AFF126000967A7 /* SDViewController.m */; };
 		28BFB51616AFFFE0000967A7 /* LinearInterpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BFB51516AFFFE0000967A7 /* LinearInterpView.m */; };
+		28BFB52916B00B7F000967A7 /* CachedLIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BFB52816B00B7F000967A7 /* CachedLIView.m */; };
+		28BFB53516B01A9B000967A7 /* BezierInterpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BFB53416B01A9B000967A7 /* BezierInterpView.m */; };
+		28BFB53816B01CD7000967A7 /* SmoothedBIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BFB53716B01CD7000967A7 /* SmoothedBIView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,12 @@
 		28BFB4D416AFF126000967A7 /* SDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDViewController.m; sourceTree = "<group>"; };
 		28BFB51416AFFFE0000967A7 /* LinearInterpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinearInterpView.h; sourceTree = "<group>"; };
 		28BFB51516AFFFE0000967A7 /* LinearInterpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinearInterpView.m; sourceTree = "<group>"; };
+		28BFB52716B00B7F000967A7 /* CachedLIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CachedLIView.h; sourceTree = "<group>"; };
+		28BFB52816B00B7F000967A7 /* CachedLIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CachedLIView.m; sourceTree = "<group>"; };
+		28BFB53316B01A9B000967A7 /* BezierInterpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierInterpView.h; sourceTree = "<group>"; };
+		28BFB53416B01A9B000967A7 /* BezierInterpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierInterpView.m; sourceTree = "<group>"; };
+		28BFB53616B01CD7000967A7 /* SmoothedBIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmoothedBIView.h; sourceTree = "<group>"; };
+		28BFB53716B01CD7000967A7 /* SmoothedBIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmoothedBIView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +95,9 @@
 		28BFB4BE16AFF126000967A7 /* SampleDrawing */ = {
 			isa = PBXGroup;
 			children = (
+				28BFB53916B01CDF000967A7 /* SmoothedBIView */,
+				28BFB52F16B01379000967A7 /* BezierInterpView */,
+				28BFB52B16B00B9D000967A7 /* CachedLIView */,
 				28BFB51A16B00015000967A7 /* SDAppDelegate */,
 				28BFB51916AFFFFC000967A7 /* SDViewController */,
 				28BFB51816AFFFE9000967A7 /* LinearInterpView */,
@@ -134,6 +146,33 @@
 				28BFB4C816AFF126000967A7 /* SDAppDelegate.m */,
 			);
 			name = SDAppDelegate;
+			sourceTree = "<group>";
+		};
+		28BFB52B16B00B9D000967A7 /* CachedLIView */ = {
+			isa = PBXGroup;
+			children = (
+				28BFB52716B00B7F000967A7 /* CachedLIView.h */,
+				28BFB52816B00B7F000967A7 /* CachedLIView.m */,
+			);
+			name = CachedLIView;
+			sourceTree = "<group>";
+		};
+		28BFB52F16B01379000967A7 /* BezierInterpView */ = {
+			isa = PBXGroup;
+			children = (
+				28BFB53316B01A9B000967A7 /* BezierInterpView.h */,
+				28BFB53416B01A9B000967A7 /* BezierInterpView.m */,
+			);
+			name = BezierInterpView;
+			sourceTree = "<group>";
+		};
+		28BFB53916B01CDF000967A7 /* SmoothedBIView */ = {
+			isa = PBXGroup;
+			children = (
+				28BFB53616B01CD7000967A7 /* SmoothedBIView.h */,
+				28BFB53716B01CD7000967A7 /* SmoothedBIView.m */,
+			);
+			name = SmoothedBIView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +246,9 @@
 				28BFB4C916AFF126000967A7 /* SDAppDelegate.m in Sources */,
 				28BFB4D516AFF126000967A7 /* SDViewController.m in Sources */,
 				28BFB51616AFFFE0000967A7 /* LinearInterpView.m in Sources */,
+				28BFB52916B00B7F000967A7 /* CachedLIView.m in Sources */,
+				28BFB53516B01A9B000967A7 /* BezierInterpView.m in Sources */,
+				28BFB53816B01CD7000967A7 /* SmoothedBIView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
